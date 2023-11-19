@@ -57,7 +57,7 @@ def evaluatePerformance(numTrials=100):
     '''
     
     # Load Data
-    filename = r"data\SPECTF.dat"
+    filename = r"C:\python\dtree\dtree_learning\Assignment1\hw1_skeleton\data\SPECTF.dat"
     data = np.loadtxt(filename, delimiter=',') # Data: mảng 267 hàng 45 cột 
     X = data[:, 1:] # Tất cả hàng cột trừ cột đầu tiên => mảng 267 hàng 44 cột
     y = np.array([data[:, 0]]).T # Cột đầu tiên transpose => mảng 1 cột chứa label
@@ -77,7 +77,7 @@ def evaluatePerformance(numTrials=100):
         np.random.shuffle(idx) # Trộn lại mảng idx, các phần tử nằm vị trí ngẫu nhiên
         X = X[idx] # Phương thức ngẫu nhiên hóa các phần tử của mảng X dựa vào vị trí chỉ số mảng idx cung cấp
         y = y[idx] # Tương tự trên
-
+        #jdhskjdf
         Xtrain,ytrain,Xtest,ytest = k_fold_split(X,y, numFold)
         
         # Train decision tree
