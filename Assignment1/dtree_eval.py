@@ -77,7 +77,7 @@ def evaluatePerformance(numTrials=100):
         np.random.shuffle(idx) # Trộn lại mảng idx, các phần tử nằm vị trí ngẫu nhiên
         X = X[idx] # Phương thức ngẫu nhiên hóa các phần tử của mảng X dựa vào vị trí chỉ số mảng idx cung cấp
         y = y[idx] # Tương tự trên
-        #jdhskjdf
+
         Xtrain,ytrain,Xtest,ytest = k_fold_split(X,y, numFold)
         
         # Train decision tree
